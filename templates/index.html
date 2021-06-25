@@ -1,13 +1,26 @@
 <html>
     <head>
-        <title>Welcome!</title>
+        <title>Cryptography with 🐍!</title>
     </head>
     <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" placeholder="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
+        <h1>Let's Encode some stuff!</h1>
+        <p>A very simple gateway into the world of cryptography is the Caesar Cipher.</p>
+        <p>It's a simple encryption process where each letter in a message is replaced by another letter some fixed number of positions away.  For example, if we wanted to ecryption "Hi" with a shift of 2, we would take the "H" and move over 2 positions to the right to replace it with the letter "J".  The same applies to the "i" - which is replaced by the letter "k".  This would give us the encrypted message "Jk".</p>
+        <a href="https://en.wikipedia.org/wiki/Caesar_cipher">More information can be found here.</a>
+        <br>
+        <br>
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/2880px-Caesar_cipher_left_shift_of_3.svg.png", width = 480, height = 200>
+        <p>So why is this named the Caesar Cipher?  Well, simply because it was named after Julius Caesar, who used it in his own private messages.  Give it a try below:</p>
+
+        <form method="post" action='results'>
+            <p>How many positions would you like to "shift" by?</p>
+            <input type="text" name="shift" placeholder="Please enter a number..."/>
+            <br>
+            <p>Enter your secret message below:</p>
+            <input type="text" name="message" placeholder="👀🤫👀🤫👀🤫"/>
+            <p></p>
+            <input type="submit" value="Encrypt!"/>
         </form>
+
     </body>
 </html>
